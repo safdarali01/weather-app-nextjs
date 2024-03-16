@@ -5,8 +5,9 @@ const WeatherCard = ({ data }) => {
     <div className="flex w-full p-20 justify-center">
       <div className="w-full max-w-sm">
         <div className="mb-4">
-          <div className="bg-black shadow-lg rounded-2xl px-8 pt-6 pb-8 mb-4 opacity-80 text-white">
-            <div className="text-center text-2xl p-2">{data.city}</div>
+          <div className="bg-black shadow-lg rounded-2xl px-4 py-6 mb-4 opacity-80 text-white">
+            <div className="text-center text-3xl">{data.city}</div>
+            <div className="text-center text-sm pb-2">{data.country}</div>
             <div className="text-center text-6xl degrees">{data.temp}</div>
             <div className=" text-center text-gray-400">{data.condition}</div>
             <div className="flow-root p-2">

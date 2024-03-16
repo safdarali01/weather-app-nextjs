@@ -16,7 +16,8 @@ const getWeather = async (location) => {
     const api_data = {
       city: data.location.name,
       country: data.location.country,
-      temp: data.current.temp_f,
+      temp: data.current.temp_c,
+      temp_f: data.current.temp_f,
       humidity: data.current.humidity,
       wind: data.current.wind_mph,
       gust: data.current.gust_mph,
