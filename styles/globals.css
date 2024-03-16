@@ -2,11 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+/* Body styles */
+body {
+  /* Set background image with center center fixed positioning and cover size */
   background: url("/images/bg.jpg") center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  -webkit-background-size: cover; /* For Safari */
+  -moz-background-size: cover; /* For Firefox */
+  -o-background-size: cover; /* For Opera */
+  background-size: cover; /* Standard syntax */
 }
 
