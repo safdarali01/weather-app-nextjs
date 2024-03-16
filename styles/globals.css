@@ -9,7 +9,4 @@ body{
   -o-background-size: cover;
   background-size: cover;
 }
-.degrees::after{
-  content: "\00b0";
-}
 
