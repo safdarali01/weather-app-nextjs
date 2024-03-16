@@ -53,13 +53,6 @@ Start the server
 Open your browser and visit `http://localhost:3000` to view the application.
 
 
-## Demo
-
-Check out the demo of this website
- 
-https://weather-nextjs.netlify.app/
-
-
 ## Support Me
 
 Buy Me a Coffee
