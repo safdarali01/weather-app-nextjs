@@ -15,23 +15,26 @@ export default function Home() {
   // useEffect hook to fetch weather data when location changes
   useEffect(() => {
     // Check if location is provided
-    if (location) {
-      // Set loading state to true and clear previous error
-      setLoading(true);
-      setError("");
-      // Fetch weather data using getWeather utility function
-      getWeather(location)
-        .then((data) => {
-          // Set fetched weather data, and set loading state to false
-          setWeather(data);
-          setLoading(false);
-        })
-        .catch((error) => {
-          // Handle error if fetching weather data fails, set error message, and set loading state to false
-          setError(error.message);
-          setLoading(false);
-        });
-    }
+    setTimeout(() => {
+      if (location) {
+        // Set loading state to true and clear previous error
+        setLoading(true);
+        setError("");
+        // Fetch weather data using getWeather utility function
+        getWeather(location)
+          .then((data) => {
+            // Set fetched weather data, and set loading state to false
+            setWeather(data);
+            setLoading(false);
+          })
+          .catch((error) => {
+            // Handle error if fetching weather data fails, set error message, and set loading state to false
+            setError(error.message);
+            setLoading(false);
+          });
+      }  
+    }, 2000);
+    
   }, [location]); // Dependence on location to trigger the effect
 
   // Render the Home page layout
